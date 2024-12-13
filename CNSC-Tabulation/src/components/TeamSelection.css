@@ -1,0 +1,182 @@
+.ts-panel-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #FFD035, #DC1F1F, #FA3A00);
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Navigation Header */
+.ts-panel-nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  width: 100%;
+  margin-top: -260px; /* Adjusted for better spacing */
+}
+
+.ts-nav-logo {
+  width: 75px;
+  height: 75px;
+}
+
+.ts-left-logo {
+  margin-left: 420px; /* Adjusted for balance */
+}
+
+.ts-right-logo {
+  margin-right: 420px;
+}
+
+.ts-nav-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  text-align: center;
+  flex: 1;
+}
+
+/* Background Rectangles */
+.ts-panel-container::before,
+.ts-panel-container::after,
+.ts-extra-rectangle {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ts-panel-container::before {
+  background-image: url('../assets/Rectangle 1.png');
+  left: 2%;
+}
+
+.ts-panel-container::after {
+  background-image: url('../assets/Rectangle 2.png');
+  left: 10%;
+}
+
+.ts-extra-rectangle {
+  background-image: url('../assets/Rectangle 3.png');
+  left: 18%;
+}
+
+/* Team Selection Content */
+.team-selection-content {
+  margin-top: 2rem;
+  position: relative;
+  max-width: 80%;
+}
+
+.team-selection-content h2 {
+  padding-top: 3rem;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.team-cards {
+  display: flex;
+  transition: transform 0.3s ease; /* Smooth scrolling */
+  overflow: hidden; /* Hide overflowing cards */
+  width: calc(150px * 5 + 1.5rem * 4); /* Ensure exactly 5 cards are visible */
+  margin: 0 auto; /* Center container */
+  gap: 1.5rem; /* Adjust gap between cards */
+}
+
+.team-card {
+  flex: 0 0 150px; /* Fixed width for each card */
+  z-index: 1000;
+}
+
+
+.team-card {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Scroll Buttons */
+.scroll-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.scroll-button.left {
+  left: -50px; /* Position adjusted */
+}
+
+.scroll-button.right {
+  right: -50px;
+}
+
+.scroll-button:hover {
+  color: #FFD035;
+}
+
+/* Footer */
+.footer-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text {
+  font-size: 1.125rem;
+  color: white;
+  max-width: 1000px;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/* Back Button Styling */
+.back-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.back-icon {
+  width: 30px;
+  height: 30px;
+}

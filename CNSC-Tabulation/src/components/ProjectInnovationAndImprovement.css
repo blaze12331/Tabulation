@@ -1,0 +1,151 @@
+/* Ensure the root container spans the full height */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensures full viewport height */
+}
+
+/* Main layout container */
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; /* Ensures the layout covers the entire height */
+}
+
+/* Content container to grow and push footer to the bottom */
+.project-innovation-container {
+    flex: 1; /* Makes the container grow to fill available space */
+}
+
+/* Footer stays at the bottom */
+.project-footer {
+    text-align: center;
+    background-color: #630000;
+    color: white;
+    padding: 10px 0;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+/* Title Section */
+.project-innovation-title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Main Container */
+.project-innovation-container {
+    padding: 25px; /* Slightly increase padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px; /* Increase gap between sections */
+    margin-bottom: 70px; /* Adjust margin for consistency */
+    border-radius: 8px; /* Optional: Adds curved corners for aesthetics */
+}
+
+/* Individual Question Section */
+.project-innovation-section {
+    background-color: #f9f9f9;
+    border: 1px solid #8b0000;
+    border-radius: 8px;
+    padding: 25px; /* Slightly increase padding */
+    width: 90%;
+    max-width: 850px; /* Slightly increase max width */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Question Title */
+.project-innovation-question-title {
+    font-size: 18px; /* Increase font size */
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px; /* Add more spacing below title */
+}
+
+/* Rating Buttons */
+.project-innovation-rating {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Increase spacing between buttons */
+}
+
+.project-innovation-rating button {
+    background-color: #ffffff;
+    color: #8b0000; /* Default text color */
+    border: 1px solid #8b0000;
+    padding: 8px; /* Reduce padding */
+    width: 40px; /* Reduce button width */
+    height: 40px; /* Ensure square buttons */
+    font-size: 14px; /* Reduce font size for numbers */
+    cursor: pointer;
+    border-radius: 8px; /* Keep curved corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.project-innovation-rating button:hover {
+    background-color: #8b0000; /* Dark red background */
+    color: #ffffff; /* White text */
+}
+
+.project-innovation-rating button.active {
+    background-color: #8b0000; /* Dark red background */
+    color: #ffffff; /* White text */
+}
+
+/* Navigation Buttons */
+.project-innovation-navigation {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    gap: 10px;
+    position: sticky; /* Makes the navigation stick to the top of the footer */
+    bottom: 0; /* Keep it just above the footer */
+    z-index: 10; /* Ensures it stays above other elements */
+    background-color: transparent; /* Remove background color */
+    border-top: none; /* Remove the border */
+    padding: 0; /* Remove padding */
+    margin-bottom: 58px; /* Add margin at the bottom */
+    margin-right: 315px; /* Add margin on the right */
+    margin-top: -75px;
+}
+
+/* Previous and Next Buttons */
+.prev-nav-button,
+.next-nav-button {
+    padding: 10px 24px;
+    background-color: #8b0000;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.prev-nav-button:hover,
+.next-nav-button:hover {
+    background-color: #a50000;
+    transform: scale(1.05);
+}
+
+.prev-nav-button:active,
+.next-nav-button:active {
+    background-color: #750000;
+    transform: scale(0.98);
+}
+
+.prev-nav-button:disabled,
+.next-nav-button:disabled {
+    background-color: #ddd;
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+.project-header {
+    background-color: #630000;
+    color: white;
+    padding: 10px 0;
+}

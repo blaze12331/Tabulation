@@ -1,0 +1,358 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f6fa;
+}
+
+.panelsettings {
+  display: flex;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed; /* Fix the sidebar in place */
+  top: 0;
+  left: 0;
+  width: 200px; /* Set sidebar width */
+  height: 95vh; /* Full height of the viewport */
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it stays above other elements */
+  overflow: hidden; /* Prevent scrolling in the sidebar */
+}
+
+/* Content Area */
+.panelsettings-content {
+  flex: 1;
+  margin-left: 200px; /* Matches the width of the sidebar */
+  padding: 20px;
+  background-color: #f5f6fa;
+}
+
+/* Panel Container */
+.panelsettings-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: calc(100% - 240px); /* Full width minus margin and padding */
+  margin: 0 auto; /* Center the container */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Header Section */
+.panelsettings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.panelsettings-header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.panelsettings-add-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.panelsettings-add-button:hover {
+  background-color: #0056b3;
+}
+
+/* Panel List */
+.panelsettings-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.panelsettings-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.panelsettings-item:last-child {
+  border-bottom: none;
+}
+
+.panelsettings-profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.panelsettings-name {
+  font-size: 16px;
+  color: #333333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .panelsettings-header h1 {
+      font-size: 20px;
+  }
+
+  .panelsettings-add-button {
+      padding: 6px 10px;
+      font-size: 12px;
+  }
+
+  .panelsettings-profile-pic {
+      width: 30px;
+      height: 30px;
+  }
+
+  .panelsettings-name {
+      font-size: 14px;
+  }
+
+  /* Adjust content margin for smaller screens */
+  .panelsettings-content {
+      margin-left: 0;
+  }
+
+  /* Adjust container width */
+  .panelsettings-container {
+      width: 100%;
+  }
+}
+
+.add-panel-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-panel-form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.form-group input {
+  width: 80%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 30px;
+  
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: center; /* Centers buttons horizontally */
+  gap: 10px; /* Adds spacing between buttons */
+  margin-top: 15px; /* Optional: Adds spacing from the form inputs */
+}
+
+.cancel-button {
+  background: #e0e0e0;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 30%;
+}
+
+.save-button {
+  background: #3f51b5;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 30%;
+  
+}
+
+.teams-list {
+  margin-top: 20px;
+}
+
+.team-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.team-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.team-list-item:hover {
+  background-color: #e0f7fa;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-number {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.team-name {
+  color: #555;
+}
+
+.team-delete-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #ff4d4f;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.team-delete-button:hover {
+  color: #d9363e;
+}
+
+.team-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.panelsettings {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+.panelsettings-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.panelsettings-container {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.panelsettings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.panelsettings-header h1 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.panelsettings-add-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.panelsettings-add-button:hover {
+  background-color: #0056b3;
+}
+
+/* Panelist list styling */
+.panelists-list h2 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.panelist-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.panelist-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.panelist-list-item:hover {
+  background-color: #f1f1f1;
+}
+
+.panelist-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.panelist-name {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+}
+
+.panelist-delete-button {
+  background: none;
+  border: none;
+  color: #dc3545;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.panelist-delete-button:hover {
+  color: #a71d2a;
+}

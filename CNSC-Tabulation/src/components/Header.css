@@ -1,0 +1,40 @@
+.header {
+    background-color: #8b0000;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .header-logo {
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+  }
+  
+
+  .header-text h1,
+.header-text h2 {
+  font-family: 'Oswald', sans-serif; /* Use Oswald for both */
+}
+
+.header-text h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.header-text h2 {
+  font-size: 18px;
+  margin: 0;
+  padding-top: 5px;
+  font-weight: 500; /* Normal weight for better readability */
+  color: white;
+}
+
+  

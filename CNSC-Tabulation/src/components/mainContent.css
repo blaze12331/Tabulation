@@ -1,0 +1,199 @@
+/* General styles */
+.main-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #FFD035, #DC1F1F, #FA3A00);
+  text-align: center;
+  overflow: hidden;
+}
+
+.overlay {
+  position: relative;
+  z-index: 2;
+}
+
+/* Rectangles */
+.main-container::before,
+.main-container::after,
+.extra-rectangle {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-container::before {
+  background-image: url('../assets/Rectangle 1.png');
+  left: 2%;
+}
+
+.main-container::after {
+  background-image: url('../assets/Rectangle 2.png');
+  left: 10%;
+}
+
+.extra-rectangle {
+  background-image: url('../assets/Rectangle 3.png');
+  left: 18%;
+}
+
+/* Header logo */
+.header-container {
+  margin-bottom: 2rem;
+  position: absolute;
+  right: 230px;
+  top: -15rem;
+}
+
+.logos {
+  width: 25rem;
+  height: 25rem;
+  position: absolute;
+  right: 0;
+}
+
+/* Button container */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 2rem;
+  position: absolute;
+  left: 80px;
+  bottom: -50px;
+}
+
+.custom-button {
+  background-color: white;
+  color: #333;
+  width: 300px;
+  height: 50px;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1.25rem;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Footer line */
+.footer-line {
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer text */
+.footer-text {
+  font-size: 1.125rem;
+  color: white;
+  max-width: 1000px;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  /* Adjust for tablets */
+  .logos {
+    width: 18rem;
+    height: 18rem;
+    top: -12rem;
+    right: 150px;
+  }
+
+  .button-container {
+    left: 40px;
+    bottom: -20px;
+  }
+
+  .custom-button {
+    width: 250px;
+    height: 45px;
+    font-size: 1.1rem;
+  }
+
+  .footer-line {
+    bottom: 50px;
+    height: 80px;
+  }
+
+  .footer-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust for mobile phones */
+  .logos {
+    width: 14rem;
+    height: 14rem;
+    top: -8rem;
+    right: 100px;
+  }
+
+  .button-container {
+    left: 20px;
+    bottom: 10px;
+    gap: 0.75rem;
+  }
+
+  .custom-button {
+    width: 200px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .footer-line {
+    bottom: 30px;
+    height: 60px;
+  }
+
+  .footer-text {
+    font-size: 0.9rem;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it appears on top */
+}
+
+.modal-content {
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+}
+

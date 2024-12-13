@@ -1,0 +1,210 @@
+/* Main container */
+.panel-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #FFD035, #DC1F1F, #FA3A00);
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Navigation Header */
+/* Navigation Header */
+.panel-nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  width: 100%;
+  margin-top: -300px;
+}
+
+.nav-logo {
+  width: 75px;
+  height: 75px;
+}
+
+.left-logo {
+  margin-left: 430px;
+}
+
+.right-logo {
+  margin-right: 430px;
+}
+
+.nav-title {
+  font-size: 1.50rem;
+  .nav-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif; /* Apply Oswald font */
+    color: white;
+    text-align: center;
+    flex: 1;
+  }
+
+  .panel-nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    width: 100%;
+  }
+  
+  
+  color: white;
+  text-align: center;
+  flex: 1;
+}
+
+/* Adjusting other elements */
+.panel-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #FFD035, #DC1F1F, #FA3A00);
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Background Rectangles */
+.panel-container::before,
+.panel-container::after,
+.extra-rectangle {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.panel-container::before {
+  background-image: url('../assets/Rectangle 1.png');
+  left: 2%;
+}
+
+.panel-container::after {
+  background-image: url('../assets/Rectangle 2.png');
+  left: 10%;
+}
+
+.extra-rectangle {
+  background-image: url('../assets/Rectangle 3.png');
+  left: 18%;
+}
+
+/* Header Content */
+.header-container {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.college-name {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.department-name {
+  font-size: 1.125rem;
+  color: white;
+}
+
+/* Panel Content */
+.panel-content {
+  margin-top: 2rem;
+}
+
+.panel-content h1 {
+  padding-top: 3rem;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.panel-content p {
+  font-size: 1.125rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.name-dropdown {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  width: 350px;
+  margin-bottom: 1.5rem;
+}
+
+.confirm-button {
+  background-color: #ffd035;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.confirm-button:hover {
+  background-color: #e0b02e;
+}
+
+/* Footer */
+.footer-line {
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text {
+  font-size: 1.125rem;
+  color: white;
+  max-width: 1000px;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/* Back Button Styling */
+.back-button {
+  margin-top: 4rem;
+  margin-left: 2rem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.back-icon {
+  width: 30px;
+  height: 30px;
+}
+

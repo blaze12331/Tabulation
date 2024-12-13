@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .evaluation-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .evaluation-content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .evaluation-title {
+    color: #630000;
+    margin-bottom: 50px;
+    margin-top: 60px;
+  }
+  
+  .evaluation-card {
+    background-color: white;
+    border: 1px solid #8b0000;
+    border-radius: 8px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .evaluation-question {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .rating-buttons-group {
+    margin-top: 10px;
+  }
+  
+  .rating-button {
+    background-color: #fff;
+    border: 1px solid #630000;
+    border-radius: 8px;
+    color: #630000;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    padding: 10px 15px;
+  }
+  
+  .rating-button:hover,
+  .rating-button.active {
+    background-color: #8b0000;
+    color: white;
+  }
+  
+  .finish-button {
+    background-color: #8b0000;
+    border: none;
+    border-radius: 8px; /* Increased border radius for a more rounded button */
+    color: white;
+    cursor: pointer;
+    font-size: 20px; /* Increased font size */
+    margin-top: 30px; /* Increased margin */
+    padding: 10px 30px; /* Increased padding for a larger button */
+  }
+  
+  .finish-button:hover {
+    background-color: #a50000;
+    transform: scale(1.05);
+  }
+  
+  .finish-button:active {
+    background-color: #750000;
+    transform: scale(0.98);
+  }
+  
+  

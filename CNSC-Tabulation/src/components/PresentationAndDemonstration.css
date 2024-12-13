@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .presentation-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .header, .footer {
+    background-color: #630000;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  .presentation-content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .presentation-title {
+    color: #630000;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+  
+  /* Evaluation Card Styles */
+  .evaluation-card {
+    background-color: white;
+    border: 1px solid #8b0000;
+    border-radius: 8px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 58%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .evaluation-question {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  
+  .rating-buttons-group {
+    margin-top: 10px;
+  }
+  
+  /* Add this CSS for active rating button */
+.rating-button.active {
+    background-color: #8b0000;
+    color: white;
+    border-color: #8b0000;
+  }
+  
+  .rating-button {
+    background-color: #fff;
+    border: 1px solid #630000;
+    border-radius: 8px;
+    color: #630000;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    padding: 10px 15px;
+  }
+  
+  .rating-button:hover {
+    background-color: #630000;
+    color: white;
+  }
+  
+  /* Navigation Buttons */
+  .navigation-buttons-container {
+    margin: 20px 0;
+    padding-left: 585px;
+    padding-top: 33px;
+    
+  }
+  
+  .navigation-button {
+    padding: 10px 24px;
+    background-color: #8b0000;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+  }
+  
+  .navigation-prev-button:hover {
+    background-color: #a50000;
+    transform: scale(1.05);
+  }
+
+.navigation-next-button:active,
+.next-nav-button:active {
+    background-color: #750000;
+    transform: scale(0.98);
+}
+
+.navigation-next-button:disabled,
+.navigation-prev-button:disabled {
+    background-color: #ddd;
+    color: #aaa;
+    cursor: not-allowed;
+}
+  
+  .navigation-next-button:hover {
+    background-color: #a50000;
+    transform: scale(1.05);
+  }
+  

@@ -1,0 +1,78 @@
+
+.admin-login-form-container {
+    background-color: #f9f9f9; /* Background color for the form */
+    padding: 50px;
+    border-radius: 8px;
+    border: 2px solid #8b0000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin-top: -40px;
+    width: 100%;
+    height: 75%;
+}
+
+.admin-login-username-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #630000;
+    margin-left: -225px; /* Adjust left margin for username label */
+   
+  }
+  
+  .admin-login-password-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #630000;
+    margin-left: -225px; /* Adjust left margin for password label */
+  }
+  
+.admin-login-form h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.admin-login-form-group {
+    margin-bottom: 15px;
+    margin-top: -10px;
+}
+
+.admin-login-form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.admin-login-form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid  #8b0000;
+    border-radius: 4px;
+}
+
+.admin-login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #a52a2a; /* Match the button color in the image */
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.admin-login-back-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #acacac; /* Match the button color in the image */
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 40%;
+    margin-left: 10px;
+}
+
+.admin-login-button:hover {
+    background-color: #8b0000; /* Slightly darker shade for hover effect */
+}
